@@ -1,10 +1,11 @@
-importScripts("https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js");
-importScripts("https://www.gstatic.com/firebasejs/7.3.0/firebase-messaging.js");
+importScripts("https://www.gstatic.com/firebasejs/6.4.0/firebase-app.js");
+importScripts("https://www.gstatic.com/firebasejs/6.4.0/firebase-messaging.js");
+
 
 if (firebase.messaging.isSupported()) {
 
     var firebaseConfig = {
-      messagingSenderId: "MESSAGE_SENDER_ID"
+      messagingSenderId: "MESSAGING_SENDER_ID"
     };
   
     firebase.initializeApp(firebaseConfig);

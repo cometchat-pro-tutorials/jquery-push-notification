@@ -7,13 +7,13 @@ const pushNotificationService = function() {
             console.log(firebase.messaging);
             if (firebase.messaging.isSupported()) {
                 const firebaseConfig = {
-                apiKey: "YOUR_FIREBASE_API_KEY",
-                authDomain: "AUTH_DOMAIN",
-                databaseURL: "DATABASE_URL",
-                projectId: "PROJECT_ID",
-                storageBucket: "STORAGE_BUCKET",
-                messagingSenderId: "MESSAGING_SENDER_ID",
-                appId: "YOUR_APP_ID"
+                  apiKey: "YOUR_FIREBASE_API_KEY",
+                  authDomain: "AUTH_DOMAIN",
+                  databaseURL: "DATABASE_URL",
+                  projectId: "PROJECT_ID",
+                  storageBucket: "",
+                  messagingSenderId: "MESSAGING_SENDER_ID",
+                  appId: "YOUR_APP_ID"
               };
             
                 firebase.initializeApp(firebaseConfig);
@@ -28,7 +28,7 @@ const pushNotificationService = function() {
               .then(token => {
                 var userType = 'group';
                 var UID = "supergroup";
-                var appId = 'YOUR_APP_ID';
+                var appId = COMETCHAT_APP_ID;
             
                 var topic = appId + '_' + userType + '_' + UID;
             
