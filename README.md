@@ -6,9 +6,9 @@ Read the full tutorial here:
 
 This application detailed the step by step guide on how to add push notifications to a modern group chat application built with jQuery and CometChat.
 
-Take a look at the screenshot below:
+Take a look at the image below:
 
-<img src="screenshots/screenshot_1.png">
+<img src="screenshots/screenshot_1.gif">
 
 
 ## Technology
